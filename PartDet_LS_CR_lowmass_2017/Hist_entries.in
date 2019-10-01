@@ -28,7 +28,7 @@ NVertices   100   0.  100.
 
 //------------------------------------------------//
 
-FillGen 1
+FillGen 0
 
 NGenHadW	5	0.	5. //05.21.18
 NGenTau            20   0.       20.
@@ -92,7 +92,7 @@ Tau2MetMt		 200 0.	       1000.
 
 //------------------------------------------------//
 
-FillElectron1 0
+FillElectron1 1
 
 NElectron1                   20   0.      20.
 Electron1Energy            2000   0.    5000.
@@ -103,7 +103,7 @@ FirstLeadingElectron1Eta    144  -7.2     +7.2
 Electron1Phi                 36  -3.15    +3.15
 Electron1MetMt              100   0      500
 
-FillElectron2 0
+FillElectron2 1
 
 NElectron2                   20   0.      20.
 Electron2Energy            2000   0.    5000.
@@ -116,7 +116,7 @@ Electron2MetMt              100   0      500
 
 //------------------------------------------------//
 
-FillMuon1 1
+FillMuon1 0
 
 NMuon1                   20   0.      20.
 Muon1Energy            2000   0.    5000.
@@ -127,7 +127,7 @@ FirstLeadingMuon1Eta    144  -7.2     +7.2
 Muon1Phi                 36  -3.15    +3.15
 Muon1MetMt              100   0      500
 
-FillMuon2 1
+FillMuon2 0
 
 NMuon2                   20   0.      20.
 Muon2Energy            2000   0.    5000.
@@ -237,7 +237,7 @@ LargestMassDiJetDeltaEta     200   0    10.
 
 //------------------------------------------------//
 
-FillDiMuon 1
+FillDiMuon 0
 
 DiMuon_Muon1DiJetDeltaPhi       72     0       +3.15
 DiMuon_Muon2DiJetDeltaPhi       72     0       +3.15
