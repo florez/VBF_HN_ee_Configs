@@ -52,7 +52,7 @@ PtCut 30.0
 ApplyLooseID 0
 ApplyTightID 1
 
-RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon1s 0
 RemoveOverlapWithMuon2s 0
 Muon1MatchingDeltaR  0.4
 Muon2MatchingDeltaR  0.4
@@ -82,7 +82,7 @@ ApplyTightID 0
 
 PtCut 30.0
 
-RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon1s 0
 RemoveOverlapWithMuon2s 0
 Muon1MatchingDeltaR 0.4
 Muon2MatchingDeltaR 0.3
@@ -109,7 +109,7 @@ ApplyTightID 0
 EtaCut 0.0 5.0
 PtCut 30.0
 
-RemoveOverlapWithMuon1s 1 
+RemoveOverlapWithMuon1s 0 
 RemoveOverlapWithMuon2s 0
 Muon1MatchingDeltaR 0.4 
 Muon2MatchingDeltaR 0.3
@@ -135,7 +135,7 @@ PtCut 30.0
 ApplyLooseID 0       
 ApplyTightID 0
 
-RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon1s 0
 RemoveOverlapWithMuon2s 0
 Muon1MatchingDeltaR 0.4
 Muon2MatchingDeltaR 0.3
@@ -157,7 +157,7 @@ Tau2MatchingDeltaR 0.3
 EtaCut 0.0 2.4
 PtCut 30.0
 
-RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon1s 0
 RemoveOverlapWithMuon2s 0
 Muon1MatchingDeltaR 0.4
 Muon2MatchingDeltaR 0.3
