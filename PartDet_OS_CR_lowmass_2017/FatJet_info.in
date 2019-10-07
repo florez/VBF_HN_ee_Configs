@@ -16,12 +16,12 @@ TauMatchingDeltaR  0.3
 EtaCut 0.0 2.4
 PtCut 180.0
 
-RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon1s 0
 RemoveOverlapWithMuon2s 0
 Muon1MatchingDeltaR 0.8
 Muon2MatchingDeltaR 0.3
 
-RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron1s 1
 RemoveOverlapWithElectron2s 0
 Electron1MatchingDeltaR 0.3
 Electron2MatchingDeltaR 0.3
