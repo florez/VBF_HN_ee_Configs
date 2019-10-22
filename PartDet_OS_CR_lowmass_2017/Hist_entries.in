@@ -237,6 +237,34 @@ LargestMassDiJetDeltaEta     200   0    10.
 
 //------------------------------------------------//
 
+FillDiElectron 1
+
+DiElectron_Electron1DiJetDeltaPhi       72    0    +3.15
+DiElectron_Electron2DiJetDeltaPhi       72    0    +3.15
+DiElectron_ElectronIsZdecay             2     0        2
+DiElectron_Electron2IsZdecay            2     0        2
+DiElectronDeltaR                      100     0        5.
+DiElectronDeltaPtDivSumPt             100    -5        5.
+DiElectronDeltaPt                     100     0     1000
+DiElectron_Electron1MetMt             100     0      500
+DiElectron_Electron2MetMt             100     0      500
+DiElectronOSLS                         20   -10       10
+DiElectronCosDphi                     220  -1.1      1.1
+DiElectronCosDphi_DeltaPtAndMet       220  -1.1      1.1
+DiElectron_Electron1MetDeltaPhi        72     0    +3.15
+DiElectron_Electron2MetDeltaPhi        72     0    +3.15
+DiElectronPZeta                       200  -100      100
+DiElectronPZetaVis                    100     0      100
+DiElectronZeta1D                      150  -300      300
+DiElectronNotReconstructableMass      600     0     1500
+DiElectronReconstructableMass         600     0     1500
+
+Electron1PtVsMuon2Pt                  100     0  500     100     0    500
+DiElectronnZeta2D                     100     0  100     200  -100    100
+Electron1MetDeltaPhiVsDiElectronCosDphi   72  0   +3.15  220    -1.1    1.1
+
+//------------------------------------------------//
+
 FillDiMuon 0
 
 DiMuon_Muon1DiJetDeltaPhi       72     0       +3.15

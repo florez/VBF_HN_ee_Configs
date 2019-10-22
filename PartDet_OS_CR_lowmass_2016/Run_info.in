@@ -18,11 +18,11 @@ ApplyGenWeight  true
 
 ///------Triggers-----///
 
-Trigger1FirstRequirement HLT_Ele27_eta2p1_WPTight 
-Trigger1SecondRequirement HLT_Ele27_eta2p1_WPTight 
+Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf 
+Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf 
 
-Trigger2FirstRequirement HLT_Ele27_eta2p1_WPTight 
-Trigger2SecondRequirement HLT_Ele27_eta2p1_WPTight 
+Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf 
+Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf
 
 ///---Treat Muon as Neutrino---///
 

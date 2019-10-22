@@ -18,11 +18,13 @@ ApplyGenWeight  true
 
 ///------Triggers-----///
 
-Trigger1FirstRequirement HLT_IsoMu27
-Trigger1SecondRequirement HLT_IsoMu27 
+##### FOR MC HLT_Ele32_WPTight_Gsf_v
+###### FOR Data HLT_Ele32_WPTight_Gsf_v      logical OR with      HLT_Ele35_WPTight_Gsf_v
+Trigger1FirstRequirement HLT_Ele32_WPTight_Gsf_v
+Trigger1SecondRequirement HLT_Ele32_WPTight_Gsf_v
 
-Trigger2FirstRequirement HLT_IsoMu27
-Trigger2SecondRequirement HLT_IsoMu27
+Trigger2FirstRequirement HLT_Ele32_WPTight_Gsf_v
+Trigger2SecondRequirement HLT_Ele32_WPTight_Gsf_v
 
 ///---Treat Muon as Neutrino---///
 

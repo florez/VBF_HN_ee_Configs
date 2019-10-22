@@ -58,16 +58,16 @@ DeltaPtCutValue 	   30.0   9999.0
 DiscrByDeltaR  1
 DeltaRCut      0.3 
 
-DiscrByOSLSType  LS
+DiscrByOSLSType  None
 DiscrByCosDphi	 false
 CosDphiCut 	 -1.00   -0.95
 
 DiscrByCosDphi_DeltaPtAndMet   false
 CosDphi_DeltaPtMetCut  0.8  1.0
 
-DiscrByMassReco  1
-HowCalculateMassReco InvariantMass     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
-MassCut          110.0   100000.0
+DiscrByMassReco  0
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          150.0   10000.0
 
 DiscrByCDFzeta2D          false
 PZetaCutCoefficient       1.0
@@ -76,7 +76,7 @@ CDFzeta2DCutValue         -50.0    9999.0
 
 DiscrByDeltaPtDivSumPt     0
 DeltaPtDivSumPtCutValue    0.1  1.0
-DiscrByDeltaPt 		   true
+DiscrByDeltaPt 		   false
 DeltaPtCutValue 	   30.0   1000.0
 
 

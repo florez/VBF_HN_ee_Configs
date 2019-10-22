@@ -18,11 +18,11 @@ ApplyGenWeight  true
 
 ///------Triggers-----///
 
-Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf 
-Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf
+Trigger1FirstRequirement HLT_Ele27_eta2p1_WPTight 
+Trigger1SecondRequirement HLT_Ele27_eta2p1_WPTight 
 
-Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf
-Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf
+Trigger2FirstRequirement HLT_Ele27_eta2p1_WPTight 
+Trigger2SecondRequirement HLT_Ele27_eta2p1_WPTight 
 
 ///---Treat Muon as Neutrino---///
 
@@ -32,7 +32,7 @@ TreatMuonsAsTaus 0
 ///-----MET cuts------///
 
 MT2Mass 0.
-DiscrByMet true
+DiscrByMet false
 MetCut 50.0 10000.0
 
 DiscrByMHT false
