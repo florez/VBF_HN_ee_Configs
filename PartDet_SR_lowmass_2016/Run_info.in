@@ -19,10 +19,10 @@ ApplyGenWeight  true
 ///------Triggers-----///
 
 Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf 
-Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf 
+Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf
 
-Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf 
-Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf 
+Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf
+Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf
 
 ///---Treat Muon as Neutrino---///
 
@@ -44,4 +44,6 @@ JetPtForMhtAndHt 30.0
 JetEtaForMhtAndHt 5.0        
 ApplyJetLooseIDforMhtAndHt true
 
-
+DiscrByGenHT true
+LowerGenHtCut 100.0
+UpperGenHtCut 150.0

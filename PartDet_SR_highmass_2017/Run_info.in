@@ -20,11 +20,11 @@ ApplyGenWeight  true
 
 ##### FOR MC HLT_Ele32_WPTight_Gsf_v
 ###### FOR Data HLT_Ele32_WPTight_Gsf_v      logical OR with      HLT_Ele35_WPTight_Gsf_v
-Trigger1FirstRequirement HLT_Ele32_WPTight_Gsf_v
-Trigger1SecondRequirement HLT_Ele32_WPTight_Gsf_v
+Trigger1FirstRequirement HLT_Ele32_WPTight_Gsf
+Trigger1SecondRequirement HLT_Ele32_WPTight_Gsf
 
-Trigger2FirstRequirement HLT_Ele32_WPTight_Gsf_v
-Trigger2SecondRequirement HLT_Ele32_WPTight_Gsf_v
+Trigger2FirstRequirement HLT_Ele32_WPTight_Gsf
+Trigger2SecondRequirement HLT_Ele32_WPTight_Gsf
 
 ///---Treat Muon as Neutrino---///
 
@@ -46,4 +46,6 @@ JetPtForMhtAndHt 30.0
 JetEtaForMhtAndHt 5.0        
 ApplyJetLooseIDforMhtAndHt true
 
-
+DiscrByGenHT true
+LowerGenHtCut 100.0
+UpperGenHtCut 150.0

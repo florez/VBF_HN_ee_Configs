@@ -44,4 +44,6 @@ JetPtForMhtAndHt 30.0
 JetEtaForMhtAndHt 5.0        
 ApplyJetLooseIDforMhtAndHt true
 
-
+DiscrByGenHT true
+LowerGenHtCut 100.0
+UpperGenHtCut 150.0

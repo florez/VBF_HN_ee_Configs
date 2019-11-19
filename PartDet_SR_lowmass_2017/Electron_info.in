@@ -59,7 +59,7 @@ MetMtCut 0. 40.
 //---RECO CUTS---///
 
 EtaCut 2.4
-PtCut 30.0 9999.9
+PtCut 35.0 9999.9
 
 DoDiscrByIsolation 1
 IsoSumPtCutValue 0.0 0.15
