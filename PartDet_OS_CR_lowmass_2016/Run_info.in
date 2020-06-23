@@ -2,27 +2,57 @@
                 Run
 ####################################
 
-CalculatePUSystematics false
+CalculatePUSystematics true
+################################################ PU  files ###########################
+#Year          Data (nom)	             Data (wgts down)	             Data (wgts up)	                     MC
+#2016	PileUpReweighting2016.root	PileUpReweighting2016Do.root	PileUpReweighting2016Up.root	mc2016_pileup_Dec2018reReco.root
+#2017	PileUpReweighting2017.root	PileUpReweighting2017Do.root	PileUpReweighting2017Up.root	mc2017_pileup_Dec2018reReco.root
+#2018	PileUpReweighting2018.root	PileUpReweighting2018Do.root	PileUpReweighting2018Up.root	mc2018_pileup_Dec2018reReco.root
+#######################################################################################
+#DataHistos data_pileup_2016_69p2.root  
+#MCHistos mc_pileup_Summer16.root
 DataHistos PileUpReweighting2016.root
 MCHistos mc2016_pileup_Dec2018reReco.root
 DataPUHistName pileup
 MCPUHistName pileup
 
+SpecialMCPUCalculation false
+///SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6.root
+SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_wanddylo_incl.root
+/// SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_dynlo_incl.root
+
 ApplyTauIDSF false
-UsePileUpWeight false
+UsePileUpWeight true
 ApplyZBoostSF false
-ApplyPreFiring false
 
-isData true
-ApplyGenWeight  false
+isData false
+ApplyGenWeight true
 
-///------Triggers-----///
+/// ------ Data-specific cuts ------///
+FilterDataByGoldenJSON true
+ApplyHEMVeto2018 false
 
-Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf 
-Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf 
+/// ------ MC Gen-level cuts ------///
+/// --- HT filter --- ///
+DiscrByGenHT false
+LowerGenHtCut 0.0
+UpperGenHtCut 100.0
 
-Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf 
-Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf
+/// --- dilepton mass filter --- ///
+DiscrByGenDileptonMass false
+GenDilepMassRange 80.0 100.0
+
+/// ------ Triggers ----- ///
+
+/////-----FOR 2016 -------/////
+Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf
+Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf
+
+/////-----FOR 2017 and 2018-------////
+////Trigger1FirstRequirement HLT_Ele32_WPTight_Gsf 
+////Trigger1SecondRequirement HLT_Ele32_WPTight_Gsf
+
+UseTriggerWildcard true
 
 ///---Treat Muon as Neutrino---///
 
@@ -30,7 +60,7 @@ TreatMuonsAsNeutrinos 0
 TreatMuonsAsTaus 0
 
 ///-----MET cuts------///
-
+ApplyMetFilters true
 MT2Mass 0.
 DiscrByMet true
 MetCut 50.0 10000.0
@@ -44,6 +74,5 @@ JetPtForMhtAndHt 30.0
 JetEtaForMhtAndHt 5.0        
 ApplyJetLooseIDforMhtAndHt true
 
-DiscrByGenHT true
-LowerGenHtCut 100.0
-UpperGenHtCut 150.0
+/// --- MC selection --- ///
+InitializeMCSelection false
